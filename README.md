@@ -1,4 +1,4 @@
-# Module 27 Tickets Update
-testing Websoctets
+# Module 28
+testing MongoDB
 
-Jest to przerobiona strona z Module 26.5 która korzysta z websocets do zaktualizowania "seats" i wyświetlanie ile zostało miejsc.
+Jest to przerobiona strona z Module 27 która korzysta z MongoDB zamiast db.js.
