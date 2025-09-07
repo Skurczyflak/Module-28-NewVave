@@ -4,10 +4,10 @@ const path = require('path');
 const socket = require('socket.io');
 const app = express();
 const mongoose = require('mongoose');
-
 const testimonialsRoutes = require('./routes/testimonials.routes'); 
 const concertsRoutes = require('./routes/concerts.routes');
 const seatsRoutes = require('./routes/seats.routes');
+
 
 const server = app.listen(process.env.PORT || 8000, () => {
   console.log('Server is running...');
@@ -41,7 +41,7 @@ app.get('*', (req, res) => {
 });
 
 // connects our backend code with the database
-***REMOVED***', { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
 const db = mongoose.connection;
 
 db.once('open', () => {

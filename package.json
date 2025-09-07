@@ -10,6 +10,6 @@
   },
   "scripts": {
     "build": "npm install && nodemon server.js ",
-    "start": "nodemon server.js"
+    "start": "nodemon --env-file .env server.js"
   }
 }
