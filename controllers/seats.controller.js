@@ -39,6 +39,7 @@ exports.addOne = async(req, res) => {
         await newSeat.save();
         const seats = await Seats.find();
         res.json({seats});
+        req.io.emit('seatsUpdated', seats);
     }catch(err){
         res.status(500).json({message: err});
     }
